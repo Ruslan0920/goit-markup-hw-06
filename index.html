@@ -77,14 +77,39 @@
                   <use href="./img/sprite.svg#icon-close"></use>
                 </svg>
               </button>
-              <form action="">
-                Ім'я<input type="text" name="" id="">
-                Телефон<input type="tel" name="" id="">
-                Пошта</form><input type="email" name="" id="">
-                <textarea name="user-message" id="" placeholder="Введіть текст"></textarea>
-                <input type="checkbox" name="consent" value="yes" id="yes">
-                <label for="yes">Погоджуюся з розсилкою та приймаю Умови договору</label>
+              <form class="contact-form">
+                <b class="contact-form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </b>
+                <div class="user-data">
+                  <label for="user-name">Ім'я</label>
+                  <input type="text" name="user-contacts" id="user-name" />
+                </div>
+                <div class="user-data">
+                  <label for="user-tel">Телефон</label>
+                  <input type="tel" name="user-contacts" id="user-tel" />
+                </div>
+                <div class="user-data">
+                  <label for="user-email">Пошта</label>
+                  <input type="email" name="user-contacts" id="user-email" />
+                </div class="comment">
+                <label for="user-message">Коментар</label>
+                <textarea
+                  class="text-user-message"
+                  name="user-message"
+                  id="user-message"
+                  placeholder="Введіть текст"
+                ></textarea>
+                <div class="policy">
+                  <input type="checkbox" name="consent" value="yes" id="yes" />
+                  <label for="yes"
+                    >Погоджуюся з розсилкою та приймаю
+                    <span> <a href="">Умови договору</a></span>
+                  </label>
+                </div>
+
                 <button type="submit">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
