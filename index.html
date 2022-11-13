@@ -84,6 +84,10 @@
                 <div class="user-data">
                   <label for="user-name">Ім'я</label>
                   <input type="text" name="user-contacts" id="user-name" />
+                  <svg class="icon-contact-form" width="12" height="12">
+                    <use href="./img/sprite.svg#icon-envelope" ></use>
+                  </svg>
+
                 </div>
                 <div class="user-data">
                   <label for="user-tel">Телефон</label>
@@ -92,23 +96,26 @@
                 <div class="user-data">
                   <label for="user-email">Пошта</label>
                   <input type="email" name="user-contacts" id="user-email" />
-                </div class="comment">
-                <label for="user-message">Коментар</label>
-                <textarea
-                  class="text-user-message"
-                  name="user-message"
-                  id="user-message"
-                  placeholder="Введіть текст"
-                ></textarea>
+                </div>
+                <div class="comment">
+                  <label for="user-message">Коментар</label>
+                  <textarea
+                    class="text-user-message"
+                    name="user-message"
+                    id="user-message"
+                    placeholder="Введіть текст"></textarea>
+                </div>
+
                 <div class="policy">
                   <input type="checkbox" name="consent" value="yes" id="yes" />
                   <label for="yes"
-                    >Погоджуюся з розсилкою та приймаю
-                    <span> <a href="">Умови договору</a></span>
+                    >Погоджуюся з розсилкою та приймаю <a href=""
+                      >Умови договору</a
+                    >
                   </label>
                 </div>
 
-                <button type="submit">Відправити</button>
+                <button class="btn-submit" type="submit">Відправити</button>
               </form>
             </div>
           </div>
