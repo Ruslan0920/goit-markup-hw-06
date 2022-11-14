@@ -274,26 +274,17 @@ img {
 }
 .contact-form {
   outline: 1px solid tomato;
-  /* width: 448px; */
-  /* height: 600px; */
-
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .contact-form-title {
   display: inline-block;
   margin-bottom: 12px;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  /* text-align: center; */
+  line-height: 1.15;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
-
 .user-data {
   position: relative;
   display: flex;
@@ -305,26 +296,32 @@ img {
   margin-bottom: 4px;
   text-align: left;
   font-family: var(--primary-font-family);
-/* font-style: normal;
-font-weight: 400; */
-font-size: 12px;
-line-height: 1.16;
-
-/* identical to box height */
-letter-spacing: 0.01em;
-
-color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 .user-data input {
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.user-data input:focus {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+  }
 .icon-contact-form {
   position: absolute;
   top: 50%;
-  
-  transform: translate(50%);
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  outline: 1px solid tomato;
+  }
+.icon-contact-form:focus {
+  fill: #2196F3;
+  background-color: rebeccapurple;
 }
 .comment {
   display: flex;
