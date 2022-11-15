@@ -83,36 +83,58 @@
                 </b>
                 <div class="user-data">
                   <label class="form-label" for="user-name">Ім'я</label>
-                  <input class="form-input" type="text" name="user-contacts" id="user-name" />
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-contacts"
+                    id="user-name"
+                  />
                   <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-name" ></use>
+                    <use href="./img/sprite.svg#icon-name"></use>
                   </svg>
-
                 </div>
                 <div class="user-data">
                   <label class="form-label" for="user-tel">Телефон</label>
-                  <input class="form-input" type="tel" name="user-contacts" id="user-tel" />
-                <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-tel" ></use>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-contacts"
+                    id="user-tel"
+                  />
+                  <svg class="icon-contact-form" width="12" height="12">
+                    <use href="./img/sprite.svg#icon-tel"></use>
                   </svg>
                 </div>
                 <div class="user-data">
                   <label class="form-label" for="user-email">Пошта</label>
-                  <input class="form-input" type="email" name="user-contacts" id="user-email" />
-                <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-mail" ></use>
-                  </svg></div>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-contacts"
+                    id="user-email"
+                  />
+                  <svg class="icon-contact-form" width="12" height="12">
+                    <use href="./img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
                 <div class="comment">
                   <label class="form-label" for="user-message">Коментар</label>
                   <textarea
                     class="text-user-message"
                     name="user-message"
                     id="user-message"
-                    placeholder="Введіть текст"></textarea>
+                    placeholder="Введіть текст"
+                  ></textarea>
                 </div>
 
                 <div class="policy">
-                  <input type="checkbox" name="consent" value="yes" id="policy-chekbox" class="contact-form-chekbox visually-hidden"/>
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    value="yes"
+                    id="policy-chekbox"
+                    class="contact-form-chekbox visually-hidden"
+                  />
                   <label for="policy-chekbox" class="contact-form-label"
                     >Погоджуюся з розсилкою та приймаю&nbsp;<a href=""
                       >Умови договору</a
@@ -515,6 +537,21 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <strong class="footer-form-title">Підпишіться на розсилку</strong>
+          <input
+            class="footer-form-input"
+            type="email"
+            name="foter-email"
+            placeholder="E-mail"
+          />
+          <button class="footer-button-subscribe" type="button">
+            Підписатися
+            <svg class="foter-button-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
