@@ -90,7 +90,7 @@
                     id="user-name"
                   />
                   <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-name"></use>
+                    <use href="./img/icons.svg#icon-name"></use>
                   </svg>
                 </div>
                 <div class="user-data">
@@ -102,7 +102,7 @@
                     id="user-tel"
                   />
                   <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-tel"></use>
+                    <use href="./img/icons.svg#icon-tel"></use>
                   </svg>
                 </div>
                 <div class="user-data">
@@ -114,7 +114,7 @@
                     id="user-email"
                   />
                   <svg class="icon-contact-form" width="12" height="12">
-                    <use href="./img/sprite.svg#icon-mail"></use>
+                    <use href="./img/icons.svg#icon-mail"></use>
                   </svg>
                 </div>
                 <div class="comment">
@@ -128,15 +128,21 @@
                 </div>
 
                 <div class="policy">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    value="yes"
-                    id="policy-chekbox"
-                    class="contact-form-chekbox visually-hidden"
-                  />
-                  <label for="policy-chekbox" class="contact-form-label"
-                    >Погоджуюся з розсилкою та приймаю&nbsp;<a href=""
+                  <label for="policy-chekbox" class="contact-form-label">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      value="yes"
+                      id="policy-chekbox"
+                      class="contact-form-chekbox isually-hidden"
+                    />
+                    <svg class="icon-policy-chekbox" width="12" height="12">
+                      <use
+                        class="icon-chekbox"
+                        href="./img/icons.svg#icon-chek"
+                      ></use>
+                    </svg>
+                    Погоджуюся з розсилкою та приймаю&nbsp;<a href=""
                       >Умови договору</a
                     >
                   </label>
@@ -545,10 +551,10 @@
             name="foter-email"
             placeholder="E-mail"
           />
-          <button class="footer-button-subscribe" type="button">
+          <button class="footer-button-subscribe" type="submit">
             Підписатися
             <svg class="foter-button-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-telegram"></use>
+              <use href="./img/icons.svg#icon-telegram"></use>
             </svg>
           </button>
         </form>
