@@ -379,6 +379,7 @@ border: 1px solid #2196F3;
  position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 /* .contact-form-checkbox:checked + .contact-form-label::before {
   background-color: #2196F3;
@@ -400,9 +401,15 @@ border: 1px solid #2196F3;
   background-position: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } */
-.contact-form-checkbox:checked +* .icon-policy-checkbox {
-  border: inherit;
+
+.input-policy-checkbox:checked + .icon-policy-checkbox {
+  border: none;
   opacity: 1;
+  }
+
+.icon-policy-checkbox:focus + .icon-checkbox {
+opacity: 1;
+
 }
 
 .icon-policy-checkbox {
@@ -412,21 +419,18 @@ border: 1px solid #2196F3;
   height: 16px;
   width: 16px;
   margin-right: 8px;
-margin-left: 12px;
+  margin-left: 12px;
   border: 2px solid black;
   border-radius: 2px;
   cursor: pointer;
-  }
-/* background-color: tomato */
-  
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* background-color: #2196F3; */
-  
-.icon-checkbox {
-opacity: 0;
+  /* opacity: 0; */
 }
+.icon-policy-checkbox:focus {
+  opacity: 1;
+}  
+/* .icon-checkbox {
+  opacity: 0;
+} */
 /* .icon-checkbox:focus {
   opacity: 1;
 } */
