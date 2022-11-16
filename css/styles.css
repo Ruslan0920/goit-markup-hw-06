@@ -380,7 +380,7 @@ border: 1px solid #2196F3;
   display: flex;
   align-items: center;
 }
-/* .contact-form-chekbox:checked + .contact-form-label::before {
+/* .contact-form-checkbox:checked + .contact-form-label::before {
   background-color: #2196F3;
   background-image: url(../img/icon-chek.svg);
   border: inherit;
@@ -400,35 +400,36 @@ border: 1px solid #2196F3;
   background-position: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } */
-.contact-form-chekbox:checked ~ .icon-policy-chekbox {
-  background-color: #2196F3;
-  /* fill: white; */
-  /* opacity: 0; */
+.contact-form-checkbox:checked ~ .icon-policy-checkbox {
   border: inherit;
+  opacity: 1;
 }
 
-.icon-policy-chekbox {
+.icon-policy-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   margin-right: 8px;
 margin-left: 12px;
   border: 2px solid black;
   border-radius: 2px;
   cursor: pointer;
+  }
+/* background-color: tomato */
   
   /* background-size: contain;
   background-repeat: no-repeat;
   background-position: center; */
   /* background-color: #2196F3; */
   
+.icon-checkbox {
+opacity: 0;
 }
-.icon-chekbox {
-fill: white;
-background-color: white
-}
+/* .icon-checkbox:focus {
+  opacity: 1;
+} */
 .btn-submit {
   min-width: 200px;
   min-height: 50px;
