@@ -403,11 +403,13 @@ border: 1px solid #2196F3;
 } */
 
 .input-policy-checkbox:checked + .icon-policy-checkbox {
-  border: none;
-  opacity: 1;
+  border: inherit;
+  fill: var(--third-bcg-color);
+
+  /* opacity: 1; */
   }
 
-.icon-policy-checkbox:focus + .icon-checkbox {
+.input-policy-checkbox:checked + .icon-policy-checkbox:focus .icon-checkbox:focus {
 opacity: 1;
 
 }
@@ -423,15 +425,19 @@ opacity: 1;
   border: 2px solid black;
   border-radius: 2px;
   cursor: pointer;
-  /* opacity: 0; */
+  fill: white;
+ 
+  
 }
-.icon-policy-checkbox:focus {
+/* .icon-policy-checkbox:focus {
   opacity: 1;
+
 }  
 .icon-checkbox {
-  opacity: 0;
+
+  opacity: 1;
 }
-/* .icon-checkbox:focus {
+.icon-checkbox:focus {
   opacity: 1;
 } */
 .btn-submit {
