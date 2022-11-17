@@ -430,7 +430,7 @@ border: 1px solid var(--third-bcg-color);
   line-height: 1.87;
   letter-spacing: 0.06em;
   
-  color: #FFFFFF;
+  color: var(--fourth-text-color);
   background: var(--third-bcg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -707,18 +707,15 @@ border: 1px solid var(--third-bcg-color);
 .footer-social-links:focus {
   background-color: var(--third-bcg-color);
 }
-.footer-form {
-  display: flex;
-  margin-left: 93px;
-}
+.right-side {
+  margin-left: auto;
+  }
 .footer-form-title {
   display: inline-block;
   margin-bottom: 20px;
-  margin-left: 93px;
-  font-family: 'Roboto';
+  font-family: var(--primary-font-family);
   font-weight: 700;
-  font-style: normal;
-  line-height: 16px;
+  line-height: 1.14;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -726,10 +723,9 @@ border: 1px solid var(--third-bcg-color);
   color: var(--fourth-text-color);
 }
 .footer-form-input {
-  display: ;
+  display: inline-block;
   width: 358px;
   height: 50px;
-  margin-left: 93px;
   padding-left: 16px;
   background-color: var(--first-bcg-color);
   color: rgba(255, 255, 255, 0.6);
@@ -753,14 +749,12 @@ border: 1px solid var(--third-bcg-color);
   padding-left: 28px;
   padding-right: 28px;
 
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
   letter-spacing: 0.06em;
-
   color: var(--fourth-text-color);
 
   background: var(--third-bcg-color);
