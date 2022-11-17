@@ -428,9 +428,9 @@ opacity: 1;
 .icon-policy-checkbox:focus {
   opacity: 1;
 }  
-/* .icon-checkbox {
+.icon-checkbox {
   opacity: 0;
-} */
+}
 /* .icon-checkbox:focus {
   opacity: 1;
 } */
