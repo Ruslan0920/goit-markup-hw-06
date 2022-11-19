@@ -319,6 +319,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .form-input:focus {
   border: 1px solid var(--third-bcg-color);
@@ -351,7 +352,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-  
+  outline: none;
 }
 .text-user-message:focus {
 border: 1px solid var(--third-bcg-color);
@@ -710,8 +711,10 @@ border: 1px solid var(--third-bcg-color);
 .right-side {
   margin-left: auto;
   }
+  .footer-form {
+    display: flex;
+  }
 .footer-form-title {
-  display: inline-block;
   margin-bottom: 20px;
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -723,37 +726,36 @@ border: 1px solid var(--third-bcg-color);
   color: var(--fourth-text-color);
 }
 .footer-form-input {
-  display: inline-block;
   width: 358px;
   height: 50px;
+  padding: 0;
   padding-left: 16px;
   background-color: var(--first-bcg-color);
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
 }
 .footer-form-input::placeholder {
-  padding-left: 16px;
-  font-family: var(--primary-font-family);
+    font-family: var(--primary-font-family);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-button-subscribe {
-  position: relative;
+ display: flex;
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: left;
   letter-spacing: 0.06em;
   color: var(--fourth-text-color);
 
@@ -764,11 +766,8 @@ border: 1px solid var(--third-bcg-color);
   cursor: pointer;
 }
 .foter-button-icon {
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-  fill: var(--fifth-bcg-color);
+ margin-left: 10px;
+ fill: var(--fifth-bcg-color);
 }
 /* ===END FOOTER=== */
 
